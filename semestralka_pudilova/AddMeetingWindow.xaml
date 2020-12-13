@@ -1,0 +1,27 @@
+﻿<Window x:Class="semestralka_pudilova.AddMeetingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:semestralka_pudilova"
+        mc:Ignorable="d"
+        Title="AddMeetingWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="From" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FromHoursTextBox" HorizontalAlignment="Left" Height="23" Margin="52,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23"/>
+        <TextBox x:Name="FromMinutesTextBox" HorizontalAlignment="Left" Height="23" Margin="80,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23"/>
+        <Label Content="To" HorizontalAlignment="Left" Margin="169,11,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ToHoursTextBox" HorizontalAlignment="Left" Height="23" Margin="196,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23"/>
+        <TextBox x:Name="ToMinutesTextBox" HorizontalAlignment="Left" Height="23" Margin="224,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23"/>
+        <Label Content="Expected persons" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ExpectedPersonsTextBox" HorizontalAlignment="Left" Height="23" Margin="127,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Customer" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CustomerTextBox" HorizontalAlignment="Left" Height="23" Margin="127,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="CheckBoxVideo" Content="Video conference" HorizontalAlignment="Left" Margin="127,105,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="137" Margin="10,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="275"/>
+        <Button x:Name="AddButton" Content="Add" HorizontalAlignment="Left" Margin="210,272,0,0" VerticalAlignment="Top" Width="75" Click="AddButton_Click"/>
+        <Button x:Name="StornoButton" Content="Storno" HorizontalAlignment="Left" Margin="10,272,0,0" VerticalAlignment="Top" Width="75" Click="StornoButton_Click"/>
+        <Button x:Name="EditButton" Content="Edit" HorizontalAlignment="Left" Margin="210,272,0,0" VerticalAlignment="Top" Width="75" Click="EditButton_Click"/>
+
+    </Grid>
+</Window>

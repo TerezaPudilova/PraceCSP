@@ -1,0 +1,26 @@
+﻿<Window x:Class="semestralka_pudilova.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:semestralka_pudilova"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="LabelInfoMeetingCentreName" Content="Name:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelInfoMeetingCentreDescription" Content="Description:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelInfoMeetingCentreCode" Content="Code:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelInfoMeetingRoomCapacity" Content="Capacity:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxDescription" HorizontalAlignment="Left" Height="23" Margin="88,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="TextBoxCode" HorizontalAlignment="Left" Height="23" Margin="88,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="88,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="TextBoxCapacity" HorizontalAlignment="Left" Height="23" Margin="88,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197"/>
+        <Button x:Name="Button" Content="Add" HorizontalAlignment="Left" Margin="210,205,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <CheckBox x:Name="CheckBoxVideoConference" Content="Video" HorizontalAlignment="Left" Margin="88,135,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboBoxMeetingCentre" HorizontalAlignment="Left" Margin="108,155,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="LabelMeetingCentre" Content="Meeting Centre:" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="EditButton" Content="Edit" HorizontalAlignment="Left" Margin="209,205,0,0" VerticalAlignment="Top" Width="76" Click="EditButton_Click"/>
+        <Button x:Name="StornoButton" Content="Storno" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top" Width="75" Click="StornoButton_Click"/>
+
+    </Grid>
+</Window>
